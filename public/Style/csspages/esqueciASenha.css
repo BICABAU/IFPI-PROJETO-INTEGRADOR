@@ -1,0 +1,120 @@
+#container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form p {
+    font-size: 20px;
+}
+
+.form .input-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.form .input-group input {
+    padding: 5px 10px 5px 10px;
+    height: 25px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-weight: 500;
+    background-color: var(--color-input-background);
+    color: var(--color-text-secondary-light);
+    outline-style: none;
+    margin-top: 8px
+}
+
+.btn-group button {
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    color: var(--color-text-primary);
+    outline: none;
+    background-color: var(--color-button-backgroud);
+}
+
+@media screen and (min-width:320px) and (max-width:480px) {
+    #esqueciASenha #container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+    }
+    .form {
+        margin-left: 20px;
+    }
+    .form p {
+        font-size: 25px;
+    }
+    .form .input-group input {
+        width: 260px;
+        height: 35px;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:768px) {
+    #esqueciASenha #container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+    }
+    .form p {
+        font-size: 38px;
+    }
+    .form .back-box img {
+        width: 40px;
+        height: 40px;
+    }
+    .form .input-group input {
+        width: 90%;
+        height: 30%;
+        font-size: 22px;
+    }
+    .form .btn-group button {
+        width: 120px;
+        height: 42px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+    #esqueciASenha #container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+    }
+    .form p {
+        font-size: 42px;
+    }
+    .form .back-box img {
+        width: 50px;
+        height: 50px;
+    }
+    .form .input-group input {
+        width: 80%;
+        height: 30%;
+        font-size: 30px;
+    }
+    .form .btn-group button {
+        width: 160px;
+        height: 50px;
+        font-size: 20px;
+    }
+}

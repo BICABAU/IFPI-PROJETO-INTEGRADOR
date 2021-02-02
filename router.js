@@ -4,7 +4,9 @@ const router = express.Router()
 const userController = require('./controllers/userController')
 
 //roteamentos aqui
-router.get('/', userController.home)
+router.get('/', userController.login)
+
+router.get('/home', userController.home)
 
 router.get('/cadastro', userController.cadastro)
 

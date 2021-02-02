@@ -1,7 +1,11 @@
 const User = require('../models/User')
 
-exports.home= function (req, res) {
+exports.login= function (req, res) {
     res.render('pages/login', { layout: 'pages/login' })
+}
+
+exports.home= function(req, res) {
+    res.render('pages/home')
 }
 
 exports.cadastro = function (req, res) {
@@ -27,7 +31,13 @@ exports.perfilDoAluno = function (req, res) {
 
 exports.cadastrar = function (req, res) {
         // console.log(req.body);
-        let user = new User(req.body)
-        user.create()
-        res.render('pages/atividadesComplementares')
-}
+        let user = new User(req.body);
+        user
+            .create()
+            .then(function (result) {
+            res.render('pages/login', { layout: 'pages/login' });
+        })
+        .catch(function (err){
+            res.send(err);
+        });
+};

@@ -4,9 +4,13 @@ const router = express.Router()
 const userController = require('./controllers/userController')
 
 //roteamentos aqui
+<<<<<<< HEAD
 router.get('/', userController.login_form)
 
 router.post ('/login', userController.login)
+=======
+router.get('/', userController.login)
+>>>>>>> f01b00c415bef3818b7d6f0602ea18da3dc6ae76
 
 router.get('/home', userController.home)
 

@@ -7,42 +7,66 @@
 }
 
 .form {
-    margin-top: 15px;
+    padding-left: 25px;
+    background: var(--color-form-primary);
     display: flex;
     flex-direction: column;
 }
 
+.form h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 .form p {
-    font-size: 20px;
+    font-size: 16px;
+    margin-bottom: 16px;
 }
 
 .form .input-group {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
 }
 
 .form .input-group input {
-    padding: 5px 10px 5px 10px;
-    height: 25px;
-    border: 2px solid #ccc;
-    border-radius: 10px;
-    font-weight: 500;
-    background-color: var(--color-input-background);
+    padding: 8px 16px;
+    margin: 8px 0;
+    background-color: rgba(37, 148, 79, 0.178);
     color: var(--color-text-secondary-light);
-    outline-style: none;
-    margin-top: 8px
+    font-weight: 500;
+    border-radius: 8px;
+    border: 1px solid rgba(37, 148, 79, 0.274);
+    outline: none;
+    font-size: 16px;
+}
+
+.btn-group {
+    padding-top: 20px;
+    display: flex;
 }
 
 .btn-group button {
-    width: 60px;
-    height: 30px;
-    border-radius: 10px;
+    padding: 12px 32px;
+    margin: 8px 0px;
+    border-radius: 8px;
     border: none;
     color: var(--color-text-primary);
     outline: none;
-    background-color: var(--color-button-backgroud);
+    background-color: var(--color-green);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.btn-group button:hover {
+    background-color: var(--color-hover-background);
+}
+
+.btn-group button:active {
+    background-color: var(--color-buttonactive-secondary);
 }
 
 @media screen and (min-width:320px) and (max-width:480px) {
